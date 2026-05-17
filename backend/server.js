@@ -4,8 +4,9 @@ const dotenv = require('dotenv');
 const qrRoutes = require('./routes/qrRoutes');
 const requestLogger = require('./middleware/requestLogger');
 
+const path = require('path');
 // Load environment variables from .env file
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 // Initialize express app
 const app = express();

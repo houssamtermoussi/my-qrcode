@@ -16,4 +16,5 @@ router.post('/', QRController.addQRCode);
 // Route to delete a QR code by its ID
 router.delete('/:id', QRController.removeQRCode);
 
+
 module.exports = router;

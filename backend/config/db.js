@@ -1,14 +1,15 @@
 const mysql = require('mysql2/promise');
 const dotenv = require('dotenv');
 
+const path = require('path');
 // Load environment variables
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 // Create connection pool
 const pool = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
+  password: process.env.DB_PASSWORD || 'turboMs.80',
   database: process.env.DB_NAME || 'myqrcode_db',
   waitForConnections: true,
   connectionLimit: 10,
