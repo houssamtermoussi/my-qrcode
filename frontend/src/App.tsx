@@ -185,9 +185,8 @@ function App() {
             </div>
             <div>
               <h1 className="text-2xl font-bold tracking-tight text-white m-0 flex items-center">
-                QR <span className="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent ml-1.5 font-extrabold">Studio</span>
+                MY <span className="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent ml-1.5 font-extrabold">qrcode</span>
               </h1>
-              <p className="text-xs text-slate-400 font-medium">Laravel-inspired Node MVC & React Integration</p>
             </div>
           </div>
 
